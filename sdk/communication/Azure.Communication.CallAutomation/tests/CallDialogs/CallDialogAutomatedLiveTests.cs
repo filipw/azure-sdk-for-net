@@ -21,6 +21,7 @@ namespace Azure.Communication.CallAutomation.Tests.CallDialogs
         }
 
         [RecordedTest]
+        [Ignore("botid not set properly")]
         public async Task DialogOperationsTest()
         {
             // ignores test if botAppId or PMA Endpoint is not set in environment variables
@@ -130,6 +131,7 @@ namespace Azure.Communication.CallAutomation.Tests.CallDialogs
         }
 
         [RecordedTest]
+        [Ignore("botid not set properly")]
         public async Task DifferingConcurrentDialogsTest()
         {
             // ignores test if botAppId or PMA Endpoint is not set in environment variables
@@ -251,6 +253,7 @@ namespace Azure.Communication.CallAutomation.Tests.CallDialogs
         }
 
         [RecordedTest]
+        [Ignore("botid not set properly")]
         public async Task IdenticalDialogsTest()
         {
             // ignores test if botAppId or PMA Endpoint is not set in environment variables
@@ -361,6 +364,7 @@ namespace Azure.Communication.CallAutomation.Tests.CallDialogs
         }
 
         [RecordedTest]
+        [Ignore("botid not set properly")]
         public async Task SubsequentDialogsTest()
         {
             // ignores test if botAppId or PMA Endpoint is not set in environment variables
@@ -484,6 +488,7 @@ namespace Azure.Communication.CallAutomation.Tests.CallDialogs
         }
 
         [RecordedTest]
+        [Ignore("botid not set properly")]
         public async Task StopNonexistingDialogTest()
         {
             // ignores test if botAppId or PMA Endpoint is not set in environment variables
