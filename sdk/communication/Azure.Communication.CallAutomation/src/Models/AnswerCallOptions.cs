@@ -32,11 +32,6 @@ namespace Azure.Communication.CallAutomation
         public Uri CallbackUri { get; }
 
         /// <summary>
-        /// Media Streaming Configuration.
-        /// </summary>
-        public MediaStreamingOptions MediaStreamingOptions { get; set; }
-
-        /// <summary>
         /// Live Transcription Configuration.
         /// </summary>
         public TranscriptionOptions TranscriptionOptions { get; set; }
@@ -55,5 +50,10 @@ namespace Azure.Communication.CallAutomation
         /// The operation context.
         /// </summary>
         public string OperationContext { get; set; }
+
+        /// <summary>
+        /// If passed true, the call will start in an escalated state. (i.e. GroupCall).
+        /// </summary>
+        public bool StartInConferenceMode { get; set; }
     }
 }
