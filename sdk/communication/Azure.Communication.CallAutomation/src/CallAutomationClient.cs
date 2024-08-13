@@ -253,7 +253,6 @@ namespace Azure.Communication.CallAutomation
             request.TranscriptionConfiguration = CreateTranscriptionOptionsInternal(options.TranscriptionOptions);
             request.AnsweredBy = Source == null ? null : new CommunicationUserIdentifierModel(Source.Id);
             request.OperationContext = options.OperationContext;
-            request.StartInConferenceMode = options.StartInConferenceMode;
 
             return request;
         }
@@ -609,7 +608,6 @@ namespace Azure.Communication.CallAutomation
                     : new PhoneNumberIdentifierModel(options?.CallInvite?.SourceCallerIdNumber?.PhoneNumber),
                 SourceDisplayName = options?.CallInvite?.SourceDisplayName,
                 Source = Source == null ? null : new CommunicationUserIdentifierModel(Source.Id),
-                StartInConferenceMode = options.StartInConferenceMode,
             };
 
             // Add CallIntelligenceOptions such as custom cognitive service domain name

@@ -5,7 +5,6 @@
 ### Features Added
 - StartRecording now accepts PauseOnStart.
 - Support CreateCallFailed and AnswerCallFailed event
-- Support StartInConferenceMode for Answer and Create Call
 
 ### Breaking Changes
 
